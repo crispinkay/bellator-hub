@@ -1,1 +1,135 @@
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#090909;
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#b1122630 0%,transparent 35%),
+    radial-gradient(circle at bottom,#b1122615 0%,transparent 40%);
+    z-index:-1;
+}
+
+.container{
+    width:min(92%,500px);
+    margin:auto;
+    padding:60px 0;
+}
+
+.logo{
+    width:120px;
+    display:block;
+    margin:0 auto 25px;
+    animation:fade .8s ease;
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.tagline{
+    text-align:center;
+    color:#d2d2d2;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#888;
+    margin:18px auto 45px;
+    line-height:1.7;
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-decoration:none;
+    color:white;
+    background:#151515;
+    border:1px solid #252525;
+    border-radius:18px;
+    padding:20px;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:#b11226;
+    box-shadow:0 0 35px rgba(177,18,38,.35);
+}
+
+.card h3{
+    font-size:18px;
+}
+
+.card span{
+    color:#888;
+    font-size:14px;
+}
+
+.offices{
+    margin-top:60px;
+}
+
+.offices h2{
+    margin-bottom:20px;
+}
+
+.office{
+    background:#131313;
+    border:1px solid #252525;
+    border-radius:16px;
+    padding:22px;
+    margin-bottom:18px;
+}
+
+.office h4{
+    color:#d73045;
+    margin-bottom:10px;
+}
+
+.office p{
+    line-height:1.8;
+    color:#bbb;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
